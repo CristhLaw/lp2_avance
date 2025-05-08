@@ -15,7 +15,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/marcas")
 public class MarcaController {
+
+
     private final IMarcaService service;
+
     @GetMapping
     public ResponseEntity<List<Marca>> findAll() {
         List<Marca> list = service.findAll();
